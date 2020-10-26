@@ -7,7 +7,10 @@
     <script type="text/javascript" src="bar-chart.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body onload="drawBarChart([1,2,3,4,5],{},$('#root'))">
+  <body onload="drawBarChart([1,2,3,4],
+  {labels: ['apples','bananas','coconuts','durians']},
+  $('#root'))"
+  >
     <div id="root"></div>
   </body>
 </html>
