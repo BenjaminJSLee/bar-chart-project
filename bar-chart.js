@@ -127,7 +127,7 @@ const getDefaultOpts = (data,opts) => {
     lineWidth: 1,
     dataPlace: "100%",
     barColour: "red",
-    labels: data,
+    labels: Array(data.length).fill().map((val,i)=>i+1),
     labelColour: "white",
     xAxisName: 'x',
     yAxisName: 'y'
